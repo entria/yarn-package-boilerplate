@@ -43,7 +43,8 @@
     "url": "git+https://github.com/entria/yarn-package-boilerplate"
   },
   "scripts": {
-    "build": "rm -rf lib/* && babel src --ignore *.spec.js --out-dir lib --copy-files --source-maps",
+    "build": "rm -rf lib/* && babel src --ignore *.spec.js --out-dir lib --copy-files && npm run build:flow",
+    "build:flow": "find ./src -name '*.js' -not -path '*/__tests__*' | while read filepath; do cp $filepath `echo $filepath | sed 's/\\/src\\//\\/lib\\//g'`.flow; done",
     "lint": "eslint src/**",
     "lint:staged": "lint-staged",
     "test": "jest",
