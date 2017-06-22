@@ -1,7 +1,7 @@
 {
   "name": "@entria/yarn-package-boilerplate",
   "description": "Yarn package boilerplate",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "author": {
     "name": "Entria",
     "email": "dev@entria.com.br",
