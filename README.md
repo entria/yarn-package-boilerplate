@@ -1,5 +1,7 @@
 # Yarn Package Boilerplate
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/entria/yarn-package-boilerplate.svg)](https://greenkeeper.io/)
+
 What is inside ?
 
 - babel (es2015, stage-0, flow)
